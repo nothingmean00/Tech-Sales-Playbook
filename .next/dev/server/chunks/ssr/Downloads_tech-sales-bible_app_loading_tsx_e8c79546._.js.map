@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/malik/Downloads/tech-sales-bible/app/loading.tsx"],"sourcesContent":["export default function Loading() {\r\n  return (\r\n    <div className=\"flex min-h-screen items-center justify-center bg-midnight\">\r\n      <div className=\"flex flex-col items-center gap-4\">\r\n        <div className=\"h-12 w-12 animate-spin rounded-full border-4 border-electric border-t-transparent\" />\r\n        <p className=\"text-sm text-slate\">Loading...</p>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,qRAAC;QAAI,WAAU;kBACb,cAAA,qRAAC;YAAI,WAAU;;8BACb,qRAAC;oBAAI,WAAU;;;;;;8BACf,qRAAC;oBAAE,WAAU;8BAAqB;;;;;;;;;;;;;;;;;AAI1C"}}]
+}

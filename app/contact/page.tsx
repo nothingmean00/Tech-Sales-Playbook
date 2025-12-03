@@ -1,0 +1,146 @@
+import type { Metadata } from "next"
+import { Navbar } from "@/components/layout/navbar"
+import { Footer } from "@/components/layout/footer"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Mail, MessageSquare, Clock } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with the Tech Sales Playbook team. Questions about our guides, services, or partnerships? We'd love to hear from you.",
+  alternates: {
+    canonical: "https://techsalesplaybook.com/contact",
+  },
+}
+
+export default function ContactPage() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-grow">
+        {/* Header */}
+        <section className="bg-midnight py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-widest text-electric">Get In Touch</p>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">Contact Us</h1>
+              <p className="mt-6 text-lg leading-relaxed text-slate">
+                Have a question about our guides? Want to learn more about our services? 
+                We're here to help.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form */}
+        <section className="bg-off-white py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+              {/* Form */}
+              <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5 lg:p-12">
+                <h2 className="text-2xl font-bold text-midnight">Send Us a Message</h2>
+                <p className="mt-2 text-slate">Fill out the form below and we'll get back to you within 24-48 hours.</p>
+                
+                <form className="mt-8 space-y-6">
+                  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm font-medium text-midnight">
+                        First Name
+                      </label>
+                      <Input id="firstName" name="firstName" className="mt-2" placeholder="John" />
+                    </div>
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm font-medium text-midnight">
+                        Last Name
+                      </label>
+                      <Input id="lastName" name="lastName" className="mt-2" placeholder="Doe" />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-midnight">
+                      Email
+                    </label>
+                    <Input id="email" name="email" type="email" className="mt-2" placeholder="john@example.com" />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-midnight">
+                      Subject
+                    </label>
+                    <Input id="subject" name="subject" className="mt-2" placeholder="Question about..." />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-midnight">
+                      Message
+                    </label>
+                    <Textarea 
+                      id="message" 
+                      name="message" 
+                      className="mt-2 min-h-32" 
+                      placeholder="Tell us how we can help..."
+                    />
+                  </div>
+                  
+                  <Button variant="electric" size="lg" className="w-full">
+                    Send Message
+                  </Button>
+                </form>
+              </div>
+
+              {/* Contact Info */}
+              <div className="flex flex-col justify-center">
+                <h2 className="text-2xl font-bold text-midnight">Other Ways to Reach Us</h2>
+                <p className="mt-2 text-slate">
+                  Prefer a different method? Here's how else you can get in touch.
+                </p>
+                
+                <div className="mt-12 space-y-8">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-electric/10 text-electric">
+                      <Mail className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-midnight">Email</h3>
+                      <p className="mt-1 text-slate">For general inquiries</p>
+                      <a href="mailto:hello@techsalesplaybook.com" className="mt-2 block text-electric hover:underline">
+                        hello@techsalesplaybook.com
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-neon/10 text-neon">
+                      <MessageSquare className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-midnight">Support</h3>
+                      <p className="mt-1 text-slate">For product and service questions</p>
+                      <a href="mailto:support@techsalesplaybook.com" className="mt-2 block text-electric hover:underline">
+                        support@techsalesplaybook.com
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
+                      <Clock className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-midnight">Response Time</h3>
+                      <p className="mt-1 text-slate">We typically respond within 24-48 hours during business days.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+

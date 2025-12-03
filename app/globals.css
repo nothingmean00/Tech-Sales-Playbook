@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Tech Sales Playbook - Electric & Professional */
+  --midnight: 222 47% 11%;
+  --electric: 217 91% 60%;
+  --electric-light: 217 91% 70%;
+  --neon: 142 71% 45%;
+  --neon-light: 142 69% 58%;
+  --slate: 215 20% 65%;
+  --off-white: 220 14% 96%;
+  --pure-white: 0 0% 100%;
+  --charcoal: 220 13% 18%;
+  --coral: 12 76% 61%;
+  
+  --background: var(--pure-white);
+  --foreground: var(--midnight);
+  --card: var(--pure-white);
+  --card-foreground: var(--midnight);
+  --popover: var(--pure-white);
+  --popover-foreground: var(--midnight);
+  --primary: var(--electric);
+  --primary-foreground: var(--pure-white);
+  --secondary: var(--off-white);
+  --secondary-foreground: var(--midnight);
+  --muted: var(--off-white);
+  --muted-foreground: var(--slate);
+  --accent: var(--neon);
+  --accent-foreground: var(--midnight);
+  --destructive: 0 84% 60%;
+  --destructive-foreground: var(--pure-white);
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: var(--electric);
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: var(--midnight);
+  --foreground: var(--off-white);
+  --card: var(--charcoal);
+  --card-foreground: var(--off-white);
+  --popover: var(--charcoal);
+  --popover-foreground: var(--off-white);
+  --primary: var(--electric-light);
+  --primary-foreground: var(--midnight);
+  --secondary: var(--charcoal);
+  --secondary-foreground: var(--off-white);
+  --muted: var(--charcoal);
+  --muted-foreground: var(--slate);
+  --accent: var(--neon);
+  --accent-foreground: var(--midnight);
+  --border: 220 13% 20%;
+  --input: 220 13% 20%;
+  --ring: var(--electric-light);
+}
+
+@theme inline {
+  --color-midnight: hsl(var(--midnight));
+  --color-electric: hsl(var(--electric));
+  --color-electric-light: hsl(var(--electric-light));
+  --color-neon: hsl(var(--neon));
+  --color-neon-light: hsl(var(--neon-light));
+  --color-slate: hsl(var(--slate));
+  --color-off-white: hsl(var(--off-white));
+  --color-charcoal: hsl(var(--charcoal));
+  --color-coral: hsl(var(--coral));
+  
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), Georgia, serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* Custom utility classes */
+.gradient-text {
+  @apply bg-gradient-to-r from-electric to-neon bg-clip-text text-transparent;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-br from-midnight via-charcoal to-midnight;
+}
+
+.gradient-electric {
+  @apply bg-gradient-to-r from-electric to-electric-light;
+}
+
+.gradient-neon {
+  @apply bg-gradient-to-r from-neon to-neon-light;
+}
+
+.card-glow {
+  @apply shadow-lg shadow-electric/10 hover:shadow-xl hover:shadow-electric/20 transition-shadow duration-300;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
+}
+
+@keyframes fade-up {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { 
+    opacity: 0; 
+    transform: scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+
+/* Focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-electric focus:ring-offset-2 focus:ring-offset-background;
+}
+
+/* Selection */
+::selection {
+  @apply bg-electric/30 text-midnight;
+}
+
