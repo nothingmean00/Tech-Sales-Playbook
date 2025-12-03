@@ -21,3 +21,6 @@
 [00:56:33.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:56:34.223] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:56:34.223] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/playbooks/breaking-into-tech-sales","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797840008}
+[01:47:59.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:47:59.611] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:47:59.612] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764800925402}

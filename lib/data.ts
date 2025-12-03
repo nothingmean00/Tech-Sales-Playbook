@@ -200,7 +200,7 @@ export const services: Service[] = [
     description:
       "Detailed feedback on your resume with specific suggestions optimized for tech sales roles. We identify weaknesses in positioning, metrics, and narrative—then show you exactly how to fix them.",
     price: 197,
-    turnaround: "48-72 hours",
+    turnaround: "3-5 days",
     includes: [
       "Line-by-line written feedback",
       "Achievement quantification review",
