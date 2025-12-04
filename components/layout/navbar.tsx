@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Zap } from "lucide-react"
+import { Menu, X, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navigation = [
@@ -93,8 +93,8 @@ export function Navbar() {
         <div className="hidden md:flex md:items-center md:gap-4">
           <Button variant="electric" size="sm" asChild>
             <Link href="/playbooks" className="gap-2">
-              <Zap className="h-4 w-4" />
               Get Started
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
         </div>
@@ -131,8 +131,8 @@ export function Navbar() {
             <div className="pt-4">
               <Button variant="electric" className="w-full" asChild>
                 <Link href="/playbooks" className="gap-2">
-                  <Zap className="h-4 w-4" />
                   Get Started
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
             </div>

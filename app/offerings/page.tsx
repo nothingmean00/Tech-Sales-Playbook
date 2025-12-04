@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { CheckoutButton } from "@/components/checkout-button"
 import { services, playbooks } from "@/lib/data"
-import { Check, FileText, PenTool, Clock, Star, BookOpen, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
+import { Check, FileText, PenTool, Clock, Star, BookOpen, Briefcase, Phone, Mail, Search, TrendingUp, Building, Target, DollarSign } from "lucide-react"
 
 const serviceIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   "resume-review": FileText,
@@ -12,13 +12,13 @@ const serviceIconMap: Record<string, React.ComponentType<{ className?: string }>
 }
 
 const playbookIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  rocket: Rocket,
+  briefcase: Briefcase,
   phone: Phone,
   mail: Mail,
   search: Search,
   "trending-up": TrendingUp,
   building: Building,
-  trophy: Trophy,
+  target: Target,
   "dollar-sign": DollarSign,
 }
 

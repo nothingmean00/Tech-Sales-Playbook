@@ -5,16 +5,16 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { CheckoutButton } from "@/components/checkout-button"
 import { playbooks } from "@/lib/data"
-import { ArrowLeft, Check, Download, Shield, Zap, BookOpen, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
+import { ArrowLeft, Check, Download, Shield, BookOpen, Briefcase, Phone, Mail, Search, TrendingUp, Building, Target, DollarSign, RefreshCw } from "lucide-react"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  rocket: Rocket,
+  briefcase: Briefcase,
   phone: Phone,
   mail: Mail,
   search: Search,
   "trending-up": TrendingUp,
   building: Building,
-  trophy: Trophy,
+  target: Target,
   "dollar-sign": DollarSign,
 }
 
@@ -126,7 +126,7 @@ export default async function PlaybookPage({ params }: Props) {
                       30-day money-back guarantee
                     </div>
                     <div className="flex items-center gap-3 text-sm text-slate">
-                      <Zap className="h-5 w-5 text-neon" />
+                      <RefreshCw className="h-5 w-5 text-neon" />
                       Lifetime updates included
                     </div>
                     <div className="flex items-center gap-3 text-sm text-slate">

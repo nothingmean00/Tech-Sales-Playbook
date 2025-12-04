@@ -1,16 +1,16 @@
 import Link from "next/link"
-import { ArrowRight, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
+import { ArrowRight, Briefcase, Phone, Mail, Search, TrendingUp, Building, Target, DollarSign, BookOpen } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import type { Playbook } from "@/lib/data"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  rocket: Rocket,
+  briefcase: Briefcase,
   phone: Phone,
   mail: Mail,
   search: Search,
   "trending-up": TrendingUp,
   building: Building,
-  trophy: Trophy,
+  target: Target,
   "dollar-sign": DollarSign,
 }
 
@@ -20,7 +20,7 @@ interface PlaybookCardProps {
 }
 
 export function PlaybookCard({ playbook, isBestseller }: PlaybookCardProps) {
-  const Icon = iconMap[playbook.icon] || Rocket
+  const Icon = iconMap[playbook.icon] || BookOpen
   
   return (
     <Link

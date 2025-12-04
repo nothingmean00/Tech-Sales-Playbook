@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { Button } from "@/components/ui/button"
-import { Target, Users, Zap, Award, ArrowRight } from "lucide-react"
+import { Target, Users, Lightbulb, Award, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,7 +21,7 @@ const values = [
     description: "Every guide is built from real-world experience. We share what actually works, not what sounds good in a textbook.",
   },
   {
-    icon: Zap,
+    icon: Lightbulb,
     title: "Action-Oriented",
     description: "Our content is designed to be implemented immediately. Scripts you can use today, frameworks you can apply tomorrow.",
   },

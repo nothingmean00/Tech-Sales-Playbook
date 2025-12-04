@@ -92,3 +92,98 @@
 [08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824457229}
+[08:21:15.824] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824521612}
+[08:21:27.423] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824533214}
+[08:21:35.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824540846}
+[08:22:27.817] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[08:22:27.817] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:27.879] Server  LOG      ✓ Compiled in 256ms
+[08:22:28.675] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\Downloads_tech-sales-bible_ef1e4170._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:28.676] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:28.685] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:28.692] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[08:22:28.692] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:29.196] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\Downloads_tech-sales-bible_30a0198d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:29.196] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:29.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:29.647] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:29.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:29.786] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[08:22:30.269] Server  LOG      ✓ Compiled in 133ms
+[08:22:30.274] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:30.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824596710}
+[08:22:31.991] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[08:22:32.004] Server  LOG      ✓ Compiled in 39ms
+[08:22:33.901] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__acfd6447._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:33.969] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:34.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:34.277] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
+[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824600180}
+[08:22:36.901] Server  LOG      ✓ Compiled in 51ms
+[08:22:37.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:37.802] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[08:22:37.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[08:22:37.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824603592}
+[08:22:44.127] Server  LOG      ✓ Compiled in 54ms
+[08:22:52.928] Server  LOG      ✓ Compiled in 197ms
+[08:22:53.683] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:53.685] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:54.396] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:54.400] Server  LOG      ✓ Compiled in 153ms
+[08:22:54.508] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:54.510] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:55.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:56.057] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:22:56.966] Server  LOG      ✓ Compiled in 134ms
+[08:22:57.080] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:22:57.082] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:22:57.648] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:57.850] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:23:13.582] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:23:13.583] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:23:14.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824640668}
+[08:23:15.179] Server  LOG      ✓ Compiled in 240ms
+[08:23:15.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:23:15.197] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:23:17.369] Server  LOG      ✓ Compiled in 126ms
+[08:23:17.477] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:23:17.478] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:23:18.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:23:18.834] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:23:19.615] Server  LOG      ✓ Compiled in 133ms
+[08:23:20.265] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:23:20.268] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:23:21.057] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824646843}
+[08:23:21.467] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:23:21.485] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:23:29.308] Server  LOG      ✓ Compiled in 136ms
+[08:23:29.412] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:23:29.413] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:23:30.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:23:30.362] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:23:31.734] Server  LOG      ✓ Compiled in 135ms
+[08:23:31.843] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:23:31.844] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:23:32.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:23:32.741] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:24:08.222] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824694011}
+[08:24:16.428] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[08:24:16.429] Server  ERROR    ⨯ ReferenceError: Zap is not defined
+[08:24:16.574] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
+[08:24:44.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:24:44.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
+[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824730888}
+[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
+[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824730919}
+[08:24:55.923] Server  LOG      ✓ Compiled in 40ms
+[08:24:56.946] Server  LOG      ✓ Compiled in 36ms
+[08:25:05.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824751650}
+[08:25:08.602] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824754392}

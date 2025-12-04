@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Shield, Zap } from "lucide-react"
+import { ArrowRight, Shield, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
@@ -46,7 +46,7 @@ export function HeroSection() {
             </Button>
             <Button variant="outline" size="xl" asChild className="border-white/30 bg-white/5 text-white hover:bg-white/15 hover:text-white">
               <Link href="/blog" className="gap-2">
-                <Zap className="h-5 w-5" />
+                <BookOpen className="h-5 w-5" />
                 Free Guides
               </Link>
             </Button>

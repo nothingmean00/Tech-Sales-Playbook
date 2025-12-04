@@ -38,7 +38,7 @@ export const playbooks: Playbook[] = [
     longDescription:
       "The definitive guide for career changers and new grads breaking into tech sales. Covers everything from understanding the SDR landscape to crafting a compelling narrative, acing interviews, and negotiating your first offer. Built from hundreds of successful career transitions.",
     price: 79,
-    icon: "rocket",
+    icon: "briefcase",
     contents: [
       "Tech sales landscape breakdown (SDR, BDR, AE roles explained)",
       "Company targeting strategy (startup vs. enterprise)",
@@ -158,7 +158,7 @@ export const playbooks: Playbook[] = [
     longDescription:
       "Everything you need to close more deals at higher values. From early-stage commitment techniques to final negotiation tactics, handling procurement, and the psychological principles that drive buying decisions. Stop leaving money on the table.",
     price: 69,
-    icon: "trophy",
+    icon: "target",
     contents: [
       "The psychology of buying decisions",
       "Trial close techniques throughout the cycle",

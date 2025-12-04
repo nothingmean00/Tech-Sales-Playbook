@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <h1 style="color: #0f172a; margin-bottom: 24px;">Thanks for reaching out! 👋</h1>
+          <h1 style="color: #0f172a; margin-bottom: 24px;">Thanks for reaching out</h1>
           
           <p>Hey${firstName ? ` ${firstName}` : ""},</p>
           

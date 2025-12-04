@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
             </head>
             <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px;">
               <div style="text-align: center; margin-bottom: 32px;">
-                <h1 style="color: #0f172a; margin-bottom: 8px;">Thank You for Your Purchase! 🎉</h1>
+                <h1 style="color: #0f172a; margin-bottom: 8px;">Thank You for Your Purchase</h1>
               </div>
               
               <p>Hey there,</p>
@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
             </head>
             <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px;">
               <div style="text-align: center; margin-bottom: 32px;">
-                <h1 style="color: #0f172a; margin-bottom: 8px;">Order Confirmed! 🎉</h1>
+                <h1 style="color: #0f172a; margin-bottom: 8px;">Order Confirmed</h1>
               </div>
               
               <p>Hey there,</p>

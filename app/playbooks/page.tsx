@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { PlaybookCard } from "@/components/playbooks/playbook-card"
 import { playbooks } from "@/lib/data"
-import { ArrowRight, BookOpen, Shield, Zap } from "lucide-react"
+import { ArrowRight, BookOpen, Shield, RefreshCw } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -56,7 +56,7 @@ export default function PlaybooksPage() {
                   <span className="text-sm">Instant PDF Download</span>
                 </div>
                 <div className="flex items-center gap-2 text-slate">
-                  <Zap className="h-5 w-5 text-electric" />
+                  <RefreshCw className="h-5 w-5 text-electric" />
                   <span className="text-sm">Lifetime Updates</span>
                 </div>
                 <div className="flex items-center gap-2 text-slate">

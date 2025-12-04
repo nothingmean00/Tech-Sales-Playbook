@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
-      subject: "Your Cold Email Starter Kit 🚀",
+      subject: "Your Cold Email Starter Kit",
       html: `
         <!DOCTYPE html>
         <html>

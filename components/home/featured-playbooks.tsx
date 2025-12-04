@@ -1,17 +1,17 @@
 import Link from "next/link"
-import { ArrowRight, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
+import { ArrowRight, Briefcase, Phone, Mail, Search, TrendingUp, Building, Target, DollarSign, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { featuredPlaybooks } from "@/lib/data"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  rocket: Rocket,
+  briefcase: Briefcase,
   phone: Phone,
   mail: Mail,
   search: Search,
   "trending-up": TrendingUp,
   building: Building,
-  trophy: Trophy,
+  target: Target,
   "dollar-sign": DollarSign,
 }
 
@@ -41,7 +41,7 @@ export function FeaturedPlaybooks() {
         {/* Playbook Cards */}
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featuredPlaybooks.map((playbook, index) => {
-            const Icon = iconMap[playbook.icon] || Rocket
+            const Icon = iconMap[playbook.icon] || BookOpen
             return (
               <Link
                 key={playbook.slug}
