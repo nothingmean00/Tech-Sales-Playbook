@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
-import { Button } from "@/components/ui/button"
+import { CheckoutButton } from "@/components/checkout-button"
 import { services, playbooks } from "@/lib/data"
-import { Check, FileText, PenTool, ArrowRight, Clock, Star, BookOpen, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
+import { Check, FileText, PenTool, Clock, Star, BookOpen, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
 
 const serviceIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   "resume-review": FileText,
@@ -174,14 +174,14 @@ export default function OfferingsPage() {
                       ))}
                     </ul>
 
-                    <Button 
+                    <CheckoutButton 
+                      productSlug={service.id}
+                      productType="service"
                       className="mt-8 w-full"
-                      variant="electric"
                       size="lg"
                     >
                       Get Started
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
+                    </CheckoutButton>
                   </div>
                 )
               })}
@@ -197,9 +197,12 @@ export default function OfferingsPage() {
               New to tech sales? Grab <strong>The Breaking In Playbook</strong>. Already in the field? 
               Pick the playbook for your current challenge or get your resume polished.
             </p>
-            <Button size="lg" className="mt-8 bg-white text-electric hover:bg-white/90" asChild>
-              <a href="mailto:hello@techsalesplaybook.com">Ask Us</a>
-            </Button>
+            <Link
+              href="mailto:support@techsalesplaybook.com"
+              className="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-electric hover:bg-white/90 transition-colors"
+            >
+              Ask Us
+            </Link>
           </div>
         </section>
       </main>

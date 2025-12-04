@@ -1,19 +1,41 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowRight, Mail, CheckCircle, FileText } from "lucide-react"
+import { ArrowRight, Mail, CheckCircle, FileText, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 export function LeadCapture() {
   const [email, setEmail] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In production, you'd send this to your email service
-    if (email) {
-      setIsSubmitted(true)
+    setError("")
+    
+    if (!email) return
+
+    setIsLoading(true)
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        const data = await response.json()
+        setError(data.error || "Something went wrong. Please try again.")
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again.")
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -47,12 +69,28 @@ export function LeadCapture() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  disabled={isLoading}
                   className="pl-12 h-14 bg-white/5 border-white/10 text-white placeholder:text-slate focus:border-electric focus:ring-electric"
                 />
               </div>
-              <Button type="submit" variant="electric" size="lg" className="h-14 px-8 group">
-                Get Free Kit
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <Button 
+                type="submit" 
+                variant="electric" 
+                size="lg" 
+                className="h-14 px-8 group"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="h-5 w-5 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Get Free Kit
+                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </>
+                )}
               </Button>
             </form>
           ) : (
@@ -65,6 +103,10 @@ export function LeadCapture() {
             </div>
           )}
 
+          {error && (
+            <p className="mt-4 text-sm text-red-400">{error}</p>
+          )}
+
           <p className="mt-6 text-xs text-slate/60">
             No spam. Unsubscribe anytime. We respect your privacy.
           </p>
@@ -73,4 +115,3 @@ export function LeadCapture() {
     </section>
   )
 }
-

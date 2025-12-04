@@ -3,7 +3,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
-import { Button } from "@/components/ui/button"
+import { CheckoutButton } from "@/components/checkout-button"
 import { playbooks } from "@/lib/data"
 import { ArrowLeft, Check, Download, Shield, Zap, BookOpen, Rocket, Phone, Mail, Search, TrendingUp, Building, Trophy, DollarSign } from "lucide-react"
 
@@ -109,10 +109,15 @@ export default async function PlaybookPage({ params }: Props) {
                     <span className="text-sm text-slate">one-time purchase</span>
                   </div>
 
-                  <Button variant="electric" size="xl" className="mt-6 w-full">
+                  <CheckoutButton 
+                    productSlug={playbook.slug} 
+                    productType="playbook"
+                    className="mt-6 w-full"
+                    size="xl"
+                  >
                     <Download className="h-5 w-5" />
                     Buy Now — Instant Download
-                  </Button>
+                  </CheckoutButton>
 
                   {/* Trust Signals */}
                   <div className="mt-6 space-y-3">
@@ -184,4 +189,3 @@ export default async function PlaybookPage({ params }: Props) {
     </div>
   )
 }
-

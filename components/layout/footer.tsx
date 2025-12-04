@@ -18,7 +18,7 @@ const navigation = {
   social: [
     { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
     { name: "Twitter", href: "https://twitter.com", icon: Twitter },
-    { name: "Email", href: "mailto:hello@techsalesplaybook.com", icon: Mail },
+    { name: "Email", href: "mailto:support@techsalesplaybook.com", icon: Mail },
   ],
 }
 

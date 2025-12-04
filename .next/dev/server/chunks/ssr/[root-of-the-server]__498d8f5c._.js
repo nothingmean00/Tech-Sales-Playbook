@@ -51,7 +51,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2
 ;
 ;
 const metadata = {
-    title: "About | Tech Sales Playbook",
+    title: "About",
     description: "Learn about Tech Sales Playbook and our mission to help people break into tech sales and crush their quotas.",
     alternates: {
         canonical: "https://techsalesplaybook.com/about"

@@ -394,7 +394,7 @@ const services = [
         title: "Resume Review",
         description: "Detailed feedback on your resume with specific suggestions optimized for tech sales roles. We identify weaknesses in positioning, metrics, and narrative—then show you exactly how to fix them.",
         price: 197,
-        turnaround: "48-72 hours",
+        turnaround: "3-5 days",
         includes: [
             "Line-by-line written feedback",
             "Achievement quantification review",
@@ -913,7 +913,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2
 ;
 ;
 const metadata = {
-    title: "The Playbooks | Premium Tech Sales Guides",
+    title: "Playbooks",
     description: "Comprehensive guides for breaking into tech sales, mastering cold outreach, discovery calls, closing, and advancing your career. Tactical frameworks that actually work.",
     keywords: [
         "tech sales playbook",

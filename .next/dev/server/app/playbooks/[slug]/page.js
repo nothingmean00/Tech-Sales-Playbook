@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/playbooks/[slug]/page.js")
 R.c("server/chunks/ssr/32e50_ec5531b2._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__702a5278._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a51fdbe8._.js")
 R.c("server/chunks/ssr/32e50_ab65bc10._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/Downloads_tech-sales-bible_app_a9908267._.js")
