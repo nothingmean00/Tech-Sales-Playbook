@@ -9,6 +9,13 @@ import { WhyItWorks } from "@/components/home/why-it-works"
 import { LeadCapture } from "@/components/home/lead-capture"
 import { BlogPreview } from "@/components/home/blog-preview"
 import { CTASection } from "@/components/home/cta-section"
+import { SchemaMarkup } from "@/components/schema-markup"
+import {
+  organizationSchema,
+  websiteSchema,
+  generateFAQSchema,
+  homePageFAQs,
+} from "@/lib/schema"
 
 export const metadata: Metadata = {
   title: "Tech Sales Playbook | Break Into Tech Sales & Crush Your Quota",
@@ -20,8 +27,11 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  const faqSchema = generateFAQSchema(homePageFAQs)
+
   return (
     <div className="flex min-h-screen flex-col">
+      <SchemaMarkup schema={[organizationSchema, websiteSchema, faqSchema]} />
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
@@ -37,4 +47,3 @@ export default function HomePage() {
     </div>
   )
 }
-

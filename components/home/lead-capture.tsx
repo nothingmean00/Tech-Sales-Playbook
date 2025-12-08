@@ -32,7 +32,7 @@ export function LeadCapture() {
         const data = await response.json()
         setError(data.error || "Something went wrong. Please try again.")
       }
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.")
     } finally {
       setIsLoading(false)
@@ -40,29 +40,34 @@ export function LeadCapture() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-charcoal to-midnight py-20 sm:py-28">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
+    <section className="relative bg-white py-24 sm:py-32 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brass/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brass/30 to-transparent" />
       
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           {/* Icon */}
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-electric/10 border border-electric/20 mb-8">
-            <FileText className="h-8 w-8 text-electric" />
+          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-midnight to-midnight-light flex items-center justify-center mb-8 animate-fade-up">
+            <FileText className="h-8 w-8 text-brass" />
           </div>
 
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Free: Cold Email Starter Kit
+          <span className="eyebrow animate-fade-up delay-100">Free Download</span>
+          
+          <h2 className="mt-4 text-midnight animate-fade-up delay-200">
+            Cold Email Starter Kit
           </h2>
           
-          <p className="mt-4 text-lg text-slate">
-            Get 5 proven cold email templates that book meetings. Plus weekly tips on breaking into tech sales.
+          <p className="mt-4 text-lg text-stone leading-relaxed animate-fade-up delay-300">
+            Get 5 proven cold email templates that book meetings. Plus weekly insights on building your sales career.
           </p>
 
+          <div className="bold-divider-brass mx-auto mt-8 mb-10 animate-fade-up delay-400" />
+
           {!isSubmitted ? (
-            <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-3 max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-fade-up delay-500">
               <div className="relative flex-grow">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate" />
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-stone" />
                 <Input
                   type="email"
                   placeholder="Enter your email"
@@ -70,14 +75,14 @@ export function LeadCapture() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   disabled={isLoading}
-                  className="pl-12 h-14 bg-white/5 border-white/10 text-white placeholder:text-slate focus:border-electric focus:ring-electric"
+                  className="pl-12 h-14 bg-ivory border-midnight/20 text-midnight placeholder:text-stone focus:border-brass focus:ring-brass"
                 />
               </div>
               <Button 
                 type="submit" 
-                variant="electric" 
-                size="lg" 
-                className="h-14 px-8 group"
+                variant="brass" 
+                size="xl" 
+                className="group"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -94,20 +99,22 @@ export function LeadCapture() {
               </Button>
             </form>
           ) : (
-            <div className="mt-10 flex flex-col items-center gap-4">
-              <div className="flex items-center gap-3 text-neon">
+            <div className="text-center py-8 animate-fade-up">
+              <div className="w-16 h-16 bg-sage text-white flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8" />
-                <span className="text-xl font-semibold">Check your inbox!</span>
               </div>
-              <p className="text-slate">We've sent the Cold Email Starter Kit to your email.</p>
+              <h3 className="text-2xl font-serif font-semibold text-midnight">Check your inbox!</h3>
+              <p className="mt-2 text-stone">
+                We&apos;ve sent the Cold Email Starter Kit to your email.
+              </p>
             </div>
           )}
 
           {error && (
-            <p className="mt-4 text-sm text-red-400">{error}</p>
+            <p className="mt-4 text-sm text-burgundy font-medium">{error}</p>
           )}
 
-          <p className="mt-6 text-xs text-slate/60">
+          <p className="mt-6 text-xs text-stone">
             No spam. Unsubscribe anytime. We respect your privacy.
           </p>
         </div>

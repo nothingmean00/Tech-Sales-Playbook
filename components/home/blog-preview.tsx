@@ -1,25 +1,26 @@
 import Link from "next/link"
 import { ArrowRight, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { featuredGuides } from "@/lib/data"
 
 export function BlogPreview() {
   return (
-    <section className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-ivory-warm py-24 sm:py-32 overflow-hidden">
+      {/* Subtle texture */}
+      <div className="texture-overlay absolute inset-0" />
+      
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-electric">Free Resources</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-midnight sm:text-4xl">
-              Latest Guides
-            </h2>
-            <p className="mt-4 max-w-2xl text-lg text-slate">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-16">
+          <div className="max-w-xl">
+            <span className="eyebrow">Free Resources</span>
+            <h2 className="mt-4 text-midnight">Latest Guides</h2>
+            <p className="mt-4 text-lg text-stone leading-relaxed">
               Tactical insights and frameworks to accelerate your tech sales career.
             </p>
+            <div className="bold-divider mt-8" />
           </div>
-          <Button variant="outline" asChild>
+          <Button variant="outline" size="lg" asChild className="shrink-0">
             <Link href="/blog" className="gap-2">
               View All Guides
               <ArrowRight className="h-4 w-4" />
@@ -28,37 +29,40 @@ export function BlogPreview() {
         </div>
 
         {/* Blog Cards */}
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {featuredGuides.map((guide) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {featuredGuides.map((guide, index) => (
             <Link
               key={guide.slug}
               href={`/blog/${guide.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl bg-off-white transition-all hover:shadow-lg"
+              className="group card-premium p-8 animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex flex-grow flex-col p-8">
-                <div className="flex items-center gap-3">
-                  <Badge variant="electric">{guide.category}</Badge>
-                  {guide.readTime && (
-                    <span className="flex items-center gap-1 text-xs text-slate">
-                      <Clock className="h-3 w-3" />
-                      {guide.readTime}
-                    </span>
-                  )}
-                </div>
-                
-                <h3 className="mt-4 text-lg font-bold text-midnight group-hover:text-electric transition-colors line-clamp-2">
-                  {guide.title}
-                </h3>
-                
-                <p className="mt-3 flex-grow text-sm leading-relaxed text-slate line-clamp-3">
-                  {guide.summary}
-                </p>
-                
-                <div className="mt-6 flex items-center gap-1 text-sm font-medium text-electric group-hover:gap-2 transition-all">
-                  Read More
-                  <ArrowRight className="h-4 w-4" />
-                </div>
+              {/* Category & Time */}
+              <div className="flex items-center gap-3 mb-6">
+                <span className="trust-badge text-[9px]">
+                  {guide.category}
+                </span>
+                {guide.readTime && (
+                  <span className="flex items-center gap-1 text-xs text-stone">
+                    <Clock className="h-3 w-3" />
+                    {guide.readTime}
+                  </span>
+                )}
               </div>
+              
+              {/* Content */}
+              <h3 className="text-xl font-semibold text-midnight group-hover:text-brass transition-colors mb-3 line-clamp-2">
+                {guide.title}
+              </h3>
+              <p className="text-stone leading-relaxed line-clamp-3 mb-6">
+                {guide.summary}
+              </p>
+              
+              {/* Read more */}
+              <span className="flex items-center gap-2 text-sm font-medium text-brass-dark group-hover:text-brass group-hover:gap-3 transition-all">
+                Read Article
+                <ArrowRight className="h-4 w-4" />
+              </span>
             </Link>
           ))}
         </div>
@@ -66,4 +70,3 @@ export function BlogPreview() {
     </section>
   )
 }
-

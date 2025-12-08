@@ -43,26 +43,29 @@ export default function AboutPage() {
       <Navbar />
       <main className="flex-grow">
         {/* Hero */}
-        <section className="bg-midnight py-20 lg:py-28">
+        <section className="gradient-midnight py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-electric">About Us</p>
-              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              <span className="eyebrow text-brass">About Us</span>
+              <h1 className="mt-4 text-white">
                 The Definitive Resource for Tech Sales Careers
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate">
+              <p className="mt-6 text-lg leading-relaxed text-stone-light">
                 We're on a mission to democratize access to tech sales knowledge. No gatekeeping, 
                 no fluff—just the proven frameworks and scripts that actually work.
               </p>
+              <div className="bold-divider-brass mx-auto mt-10" />
             </div>
           </div>
         </section>
 
         {/* Story */}
-        <section className="bg-white py-20 lg:py-28">
+        <section className="bg-white py-24 lg:py-32">
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-midnight">Our Story</h2>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-slate">
+            <span className="eyebrow">Our Story</span>
+            <h2 className="mt-4 text-midnight">Why We Built This</h2>
+            <div className="bold-divider-brass mt-8 mb-10" />
+            <div className="space-y-6 text-lg leading-relaxed text-stone">
               <p>
                 Tech Sales Playbook started from a simple observation: the best sales tactics aren't taught in 
                 any course. They're passed down informally—from top performers to their mentees, in team 
@@ -79,7 +82,7 @@ export default function AboutPage() {
                 that have helped people land roles at companies like Salesforce, HubSpot, Gong, and fast-growing 
                 startups across the tech landscape.
               </p>
-              <p>
+              <p className="font-semibold text-midnight">
                 This isn't theory. This is what works.
               </p>
             </div>
@@ -87,23 +90,29 @@ export default function AboutPage() {
         </section>
 
         {/* Values */}
-        <section className="bg-off-white py-20 lg:py-28">
+        <section className="bg-ivory-warm py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold text-midnight">What We Believe</h2>
-              <p className="mt-4 text-lg text-slate">
-                The principles that guide everything we create.
+            <div className="max-w-2xl mb-16">
+              <span className="eyebrow">What We Believe</span>
+              <h2 className="mt-4 text-midnight">Our Principles</h2>
+              <p className="mt-4 text-lg text-stone">
+                The values that guide everything we create.
               </p>
+              <div className="bold-divider mt-8" />
             </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2">
-              {values.map((value) => (
-                <div key={value.title} className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric/10 text-electric">
-                    <value.icon className="h-6 w-6" />
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+              {values.map((value, index) => (
+                <div 
+                  key={value.title} 
+                  className="group card-premium p-8 animate-fade-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-midnight to-midnight-light flex items-center justify-center group-hover:from-brass group-hover:to-brass-light transition-all duration-300">
+                    <value.icon className="h-6 w-6 text-brass group-hover:text-midnight transition-colors duration-300" />
                   </div>
-                  <h3 className="mt-6 text-xl font-bold text-midnight">{value.title}</h3>
-                  <p className="mt-3 text-slate leading-relaxed">{value.description}</p>
+                  <h3 className="mt-6 text-xl font-semibold text-midnight">{value.title}</h3>
+                  <p className="mt-3 text-stone leading-relaxed">{value.description}</p>
                 </div>
               ))}
             </div>
@@ -111,14 +120,15 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-midnight py-16">
+        <section className="gradient-midnight py-20">
           <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">Ready to Get Started?</h2>
-            <p className="mt-4 text-slate">
+            <h2 className="text-white">Ready to Get Started?</h2>
+            <p className="mt-4 text-stone-light">
               Explore our guides and start accelerating your tech sales career today.
             </p>
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button variant="electric" size="lg" asChild>
+            <div className="bold-divider-brass mx-auto mt-8 mb-10" />
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <Button variant="brass" size="lg" asChild>
                 <Link href="/playbooks" className="gap-2">
                   Explore the Playbooks
                   <ArrowRight className="h-4 w-4" />
@@ -135,4 +145,3 @@ export default function AboutPage() {
     </div>
   )
 }
-

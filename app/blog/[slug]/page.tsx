@@ -5,7 +5,9 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { SchemaMarkup } from "@/components/schema-markup"
 import { guides } from "@/lib/data"
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema"
 import { ArrowLeft, Clock, ArrowRight } from "lucide-react"
 
 interface Props {
@@ -56,8 +58,23 @@ export default async function BlogPostPage({ params }: Props) {
     (g) => g.slug !== slug && g.category === guide.category
   ).slice(0, 3)
 
+  // Generate schemas
+  const articleSchema = generateArticleSchema({
+    title: guide.title,
+    description: guide.summary,
+    slug: guide.slug,
+    publishedAt: guide.publishedAt || new Date().toISOString(),
+  })
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://techsalesplaybook.com" },
+    { name: "Blog", url: "https://techsalesplaybook.com/blog" },
+    { name: guide.title, url: `https://techsalesplaybook.com/blog/${slug}` },
+  ])
+
   return (
     <div className="flex min-h-screen flex-col">
+      <SchemaMarkup schema={[articleSchema, breadcrumbSchema]} />
       <Navbar />
       <main className="flex-grow">
         {/* Article Header */}
@@ -170,4 +187,3 @@ export default async function BlogPostPage({ params }: Props) {
     </div>
   )
 }
-

@@ -1,18 +1,24 @@
 import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
+import { Playfair_Display, Source_Sans_3 } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+// Display font - Elegant serif for headlines
+// Playfair Display conveys authority and sophistication
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-display",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 })
 
-const inter = Inter({
+// Body font - Professional and highly readable
+// Source Sans 3 is clean, trustworthy, and optimized for screens
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-body",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
@@ -80,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${sourceSans.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
@@ -88,4 +94,3 @@ export default function RootLayout({
     </html>
   )
 }
-

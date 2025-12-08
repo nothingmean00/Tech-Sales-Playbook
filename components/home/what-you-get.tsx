@@ -35,31 +35,43 @@ const features = [
 
 export function WhatYouGet() {
   return (
-    <section className="bg-off-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-ivory-warm py-24 sm:py-32 overflow-hidden">
+      {/* Subtle texture */}
+      <div className="texture-overlay absolute inset-0" />
+      
+      {/* Decorative gold line */}
+      <div className="absolute left-0 top-1/4 w-px h-32 bg-gradient-to-b from-transparent via-brass/40 to-transparent hidden lg:block" />
+      
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-electric">What's Inside</p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-midnight sm:text-4xl">
-            Everything You Need to Succeed in Tech Sales
+        <div className="max-w-2xl mb-16">
+          <span className="eyebrow">What&apos;s Inside</span>
+          <h2 className="mt-4 text-midnight">
+            Everything You Need to
+            <br />
+            <span className="marker-highlight">Succeed in Tech Sales</span>
           </h2>
-          <p className="mt-4 text-lg text-slate">
-            Practical frameworks, proven scripts, and tactical guides—no fluff, no theory, just what works.
+          <p className="mt-6 text-lg text-stone leading-relaxed">
+            Practical frameworks, proven scripts, and tactical guides. No fluff, no theory—just what works.
           </p>
+          <div className="bold-divider-brass mt-8" />
         </div>
 
         {/* Features Grid */}
-        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5 transition-all hover:shadow-lg hover:ring-electric/20"
+              className="group card-premium p-8 animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric/10 text-electric group-hover:bg-electric group-hover:text-white transition-colors">
-                <feature.icon className="h-6 w-6" />
+              {/* Icon */}
+              <div className="w-12 h-12 bg-gradient-to-br from-midnight to-midnight-light flex items-center justify-center mb-6 group-hover:from-brass group-hover:to-brass-light transition-all duration-300">
+                <feature.icon className="h-6 w-6 text-brass group-hover:text-midnight transition-colors duration-300" />
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-midnight">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate">{feature.description}</p>
+              
+              <h3 className="text-xl font-semibold text-midnight mb-3">{feature.title}</h3>
+              <p className="text-stone leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -67,4 +79,3 @@ export function WhatYouGet() {
     </section>
   )
 }
-

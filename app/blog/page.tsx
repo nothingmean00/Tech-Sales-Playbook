@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
-  // Group guides by category
   const categories = [...new Set(guides.map((g) => g.category))]
 
   return (
@@ -30,26 +29,27 @@ export default function BlogPage() {
       <Navbar />
       <main className="flex-grow">
         {/* Header */}
-        <section className="bg-midnight py-20 lg:py-28">
+        <section className="gradient-midnight py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-electric">Free Resources</p>
-              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">The Blog</h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate">
+              <span className="eyebrow text-brass">Free Resources</span>
+              <h1 className="mt-4 text-white">The Blog</h1>
+              <p className="mt-6 text-lg leading-relaxed text-stone-light">
                 Tactical insights, proven frameworks, and career advice to accelerate your tech sales journey. 
                 No email required.
               </p>
+              <div className="bold-divider-brass mx-auto mt-10" />
             </div>
           </div>
         </section>
 
         {/* Category Filter */}
-        <section className="border-b bg-white py-4">
+        <section className="border-b border-midnight/10 bg-white py-4">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="flex flex-wrap gap-2">
-              <Badge variant="electric" className="cursor-pointer">All</Badge>
+              <Badge variant="signal" className="cursor-pointer">All</Badge>
               {categories.map((category) => (
-                <Badge key={category} variant="outline" className="cursor-pointer hover:bg-electric/10">
+                <Badge key={category} variant="outline" className="cursor-pointer hover:bg-brass/10">
                   {category}
                 </Badge>
               ))}
@@ -58,38 +58,37 @@ export default function BlogPage() {
         </section>
 
         {/* Blog Grid */}
-        <section className="bg-off-white py-20 lg:py-28">
+        <section className="bg-ivory-warm py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {guides.map((guide) => (
+              {guides.map((guide, index) => (
                 <Link
                   key={guide.slug}
                   href={`/blog/${guide.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-all hover:shadow-xl hover:ring-electric/20"
+                  className="group card-premium p-8 animate-fade-up"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className="flex flex-grow flex-col p-8">
-                    <div className="flex items-center gap-3">
-                      <Badge variant="electric">{guide.category}</Badge>
-                      {guide.readTime && (
-                        <span className="flex items-center gap-1 text-xs text-slate">
-                          <Clock className="h-3 w-3" />
-                          {guide.readTime}
-                        </span>
-                      )}
-                    </div>
-                    
-                    <h2 className="mt-4 text-lg font-bold text-midnight group-hover:text-electric transition-colors line-clamp-2">
-                      {guide.title}
-                    </h2>
-                    
-                    <p className="mt-3 flex-grow text-sm leading-relaxed text-slate line-clamp-3">
-                      {guide.summary}
-                    </p>
-                    
-                    <div className="mt-6 flex items-center gap-1 text-sm font-medium text-electric group-hover:gap-2 transition-all">
-                      Read Article
-                      <ArrowRight className="h-4 w-4" />
-                    </div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <Badge variant="signal">{guide.category}</Badge>
+                    {guide.readTime && (
+                      <span className="flex items-center gap-1 text-xs text-stone">
+                        <Clock className="h-3 w-3" />
+                        {guide.readTime}
+                      </span>
+                    )}
+                  </div>
+                  
+                  <h2 className="text-lg font-semibold text-midnight group-hover:text-brass transition-colors line-clamp-2">
+                    {guide.title}
+                  </h2>
+                  
+                  <p className="mt-3 flex-grow text-sm leading-relaxed text-stone line-clamp-3">
+                    {guide.summary}
+                  </p>
+                  
+                  <div className="mt-6 flex items-center gap-2 text-sm font-medium text-brass-dark group-hover:text-brass group-hover:gap-3 transition-all">
+                    Read Article
+                    <ArrowRight className="h-4 w-4" />
                   </div>
                 </Link>
               ))}
@@ -101,4 +100,3 @@ export default function BlogPage() {
     </div>
   )
 }
-

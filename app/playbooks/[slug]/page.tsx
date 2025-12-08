@@ -4,7 +4,9 @@ import { notFound } from "next/navigation"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { CheckoutButton } from "@/components/checkout-button"
+import { SchemaMarkup } from "@/components/schema-markup"
 import { playbooks } from "@/lib/data"
+import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schema"
 import { ArrowLeft, Check, Download, Shield, BookOpen, Briefcase, Phone, Mail, Search, TrendingUp, Building, Target, DollarSign, RefreshCw } from "lucide-react"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -62,8 +64,23 @@ export default async function PlaybookPage({ params }: Props) {
 
   const Icon = iconMap[playbook.icon] || BookOpen
 
+  // Generate schemas
+  const productSchema = generateProductSchema({
+    name: playbook.title,
+    description: playbook.longDescription,
+    price: playbook.price,
+    slug: playbook.slug,
+  })
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://techsalesplaybook.com" },
+    { name: "Playbooks", url: "https://techsalesplaybook.com/playbooks" },
+    { name: playbook.title, url: `https://techsalesplaybook.com/playbooks/${slug}` },
+  ])
+
   return (
     <div className="flex min-h-screen flex-col">
+      <SchemaMarkup schema={[productSchema, breadcrumbSchema]} />
       <Navbar />
       <main className="flex-grow">
         {/* Header */}
@@ -122,15 +139,15 @@ export default async function PlaybookPage({ params }: Props) {
                   {/* Trust Signals */}
                   <div className="mt-6 space-y-3">
                     <div className="flex items-center gap-3 text-sm text-slate">
-                      <Shield className="h-5 w-5 text-neon" />
+                      <Shield className="h-5 w-5 text-emerald" />
                       30-day money-back guarantee
                     </div>
                     <div className="flex items-center gap-3 text-sm text-slate">
-                      <RefreshCw className="h-5 w-5 text-neon" />
+                      <RefreshCw className="h-5 w-5 text-emerald" />
                       Lifetime updates included
                     </div>
                     <div className="flex items-center gap-3 text-sm text-slate">
-                      <BookOpen className="h-5 w-5 text-neon" />
+                      <BookOpen className="h-5 w-5 text-emerald" />
                       Instant PDF download
                     </div>
                   </div>
@@ -141,7 +158,7 @@ export default async function PlaybookPage({ params }: Props) {
                     <ul className="mt-4 space-y-3">
                       {playbook.contents.map((item) => (
                         <li key={item} className="flex items-start gap-3 text-sm text-slate">
-                          <Check className="mt-0.5 h-5 w-5 shrink-0 text-neon" />
+                          <Check className="mt-0.5 h-5 w-5 shrink-0 text-emerald" />
                           {item}
                         </li>
                       ))}

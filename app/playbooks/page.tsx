@@ -5,6 +5,7 @@ import { PlaybookCard } from "@/components/playbooks/playbook-card"
 import { playbooks } from "@/lib/data"
 import { ArrowRight, BookOpen, Shield, RefreshCw } from "lucide-react"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Playbooks",
@@ -39,28 +40,28 @@ export default function PlaybooksPage() {
       <Navbar />
       <main className="flex-grow">
         {/* Page Header */}
-        <section className="bg-midnight py-20 lg:py-28">
+        <section className="gradient-midnight py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-electric">Premium Resources</p>
-              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">The Playbooks</h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate">
+              <span className="eyebrow text-brass">Premium Resources</span>
+              <h1 className="mt-4 text-white">The Playbooks</h1>
+              <p className="mt-6 text-lg leading-relaxed text-stone-light">
                 Tactical guides for every stage of your tech sales career. Each playbook is packed with 
                 proven scripts, frameworks, and strategies—no fluff, just what works.
               </p>
 
               {/* Value props */}
               <div className="mt-12 flex flex-wrap justify-center gap-8">
-                <div className="flex items-center gap-2 text-slate">
-                  <BookOpen className="h-5 w-5 text-electric" />
+                <div className="flex items-center gap-2 text-stone-light">
+                  <BookOpen className="h-5 w-5 text-brass" />
                   <span className="text-sm">Instant PDF Download</span>
                 </div>
-                <div className="flex items-center gap-2 text-slate">
-                  <RefreshCw className="h-5 w-5 text-electric" />
+                <div className="flex items-center gap-2 text-stone-light">
+                  <RefreshCw className="h-5 w-5 text-brass" />
                   <span className="text-sm">Lifetime Updates</span>
                 </div>
-                <div className="flex items-center gap-2 text-slate">
-                  <Shield className="h-5 w-5 text-electric" />
+                <div className="flex items-center gap-2 text-stone-light">
+                  <Shield className="h-5 w-5 text-brass" />
                   <span className="text-sm">30-Day Money Back</span>
                 </div>
               </div>
@@ -69,7 +70,7 @@ export default function PlaybooksPage() {
         </section>
 
         {/* Bundle Offer */}
-        <section className="bg-neon py-6">
+        <section className="bg-brass py-5">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <div className="text-center sm:text-left">
@@ -79,15 +80,15 @@ export default function PlaybooksPage() {
                   — Save 35%
                 </p>
               </div>
-              <button className="rounded-lg bg-midnight px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-charcoal">
+              <Button variant="midnight" size="sm">
                 Get the Bundle
-              </button>
+              </Button>
             </div>
           </div>
         </section>
 
         {/* Playbooks Grid */}
-        <section className="bg-off-white py-20 lg:py-28">
+        <section className="bg-ivory-warm py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {playbooks.map((playbook, index) => (
@@ -98,20 +99,20 @@ export default function PlaybooksPage() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="bg-midnight py-16">
+        <section className="gradient-midnight py-20">
           <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">Not Sure Where to Start?</h2>
-            <p className="mt-4 text-base text-slate">
+            <h2 className="text-white">Not Sure Where to Start?</h2>
+            <p className="mt-4 text-stone-light">
               New to tech sales? Start with The Breaking In Playbook. It covers everything you need 
               to land your first SDR role.
             </p>
-            <Link
-              href="/playbooks/breaking-into-tech-sales"
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-electric px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-electric-light"
-            >
-              Start with Breaking In
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            <div className="bold-divider-brass mx-auto mt-8 mb-10" />
+            <Button variant="brass" size="lg" asChild>
+              <Link href="/playbooks/breaking-into-tech-sales" className="gap-2">
+                Start with Breaking In
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </section>
       </main>

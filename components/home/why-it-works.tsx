@@ -29,31 +29,45 @@ const reasons = [
 
 export function WhyItWorks() {
   return (
-    <section className="bg-midnight py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-ivory-deep py-24 sm:py-32 overflow-hidden">
+      {/* Subtle texture */}
+      <div className="texture-overlay absolute inset-0" />
+      
+      {/* Decorative line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brass/30 to-transparent" />
+      
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-electric">Why It Works</p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            No Fluff. Just What Works.
+        <div className="max-w-2xl mb-16">
+          <span className="eyebrow">Why It Works</span>
+          <h2 className="mt-4 text-midnight">
+            No Fluff.
+            <br />
+            <span className="marker-highlight">Just What Works.</span>
           </h2>
-          <p className="mt-4 text-lg text-slate">
+          <p className="mt-6 text-lg text-stone leading-relaxed">
             We cut through the noise to give you exactly what you need to succeed.
           </p>
+          <div className="bold-divider mt-8" />
         </div>
 
         {/* Reasons Grid */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {reasons.map((reason) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          {reasons.map((reason, index) => (
             <div
               key={reason.title}
-              className="relative rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
+              className="group flex gap-6 animate-fade-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric text-white">
-                <reason.icon className="h-6 w-6" />
+              {/* Icon */}
+              <div className="shrink-0 w-12 h-12 bg-gradient-to-br from-midnight to-midnight-light flex items-center justify-center group-hover:from-brass group-hover:to-brass-light transition-all duration-300">
+                <reason.icon className="h-6 w-6 text-brass group-hover:text-midnight transition-colors duration-300" />
               </div>
-              <h3 className="mt-6 text-lg font-semibold text-white">{reason.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate">{reason.description}</p>
+              
+              <div>
+                <h3 className="text-xl font-semibold text-midnight mb-2">{reason.title}</h3>
+                <p className="text-stone leading-relaxed">{reason.description}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -61,4 +75,3 @@ export function WhyItWorks() {
     </section>
   )
 }
-

@@ -1,74 +1,87 @@
 import Link from "next/link"
-import { ArrowRight, Shield, BookOpen } from "lucide-react"
+import { ArrowRight, BookOpen, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-midnight min-h-[90vh] flex items-center">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+    <section className="relative min-h-[90vh] bg-ivory overflow-hidden">
+      {/* Subtle texture */}
+      <div className="texture-overlay absolute inset-0" />
       
-      {/* Animated Gradient Orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-electric/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon/10 rounded-full blur-3xl animate-float delay-3" />
-
-      <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          {/* Trust Badge */}
-          <div className="animate-fade-up flex justify-center mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-neon/10 border border-neon/20 px-4 py-2 text-sm text-neon">
-              <Shield className="h-4 w-4" />
-              <span>30-Day Money-Back Guarantee</span>
-            </div>
+      {/* Decorative gold line */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brass via-brass-light to-brass" />
+      
+      {/* Content */}
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-32 pb-24 lg:pt-40 lg:pb-32">
+        <div className="max-w-4xl">
+          {/* Trust badge */}
+          <div className="animate-fade-up mb-8">
+            <span className="trust-badge">
+              <Shield className="h-3.5 w-3.5" />
+              Premium Sales Training
+            </span>
           </div>
 
-          {/* Headline */}
-          <h1 className="animate-fade-up delay-1 text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Break Into Tech Sales.{" "}
-            <span className="bg-gradient-to-r from-electric to-neon bg-clip-text text-transparent">
-              Crush Your Quota.
+          {/* Elegant headline */}
+          <h1 className="animate-fade-up delay-100 text-midnight">
+            Master the Art of
+            <br />
+            <span className="relative inline-block">
+              <span className="marker-highlight">Tech Sales</span>
             </span>
           </h1>
 
-          {/* Subheadline */}
-          <p className="animate-fade-up delay-2 mt-6 text-lg leading-relaxed text-slate sm:text-xl max-w-2xl mx-auto">
-            The complete playbook for landing your first SDR role, mastering cold outreach, 
-            and accelerating to Account Executive.
+          {/* Refined subhead */}
+          <p className="animate-fade-up delay-200 mt-8 text-xl sm:text-2xl text-stone max-w-2xl leading-relaxed">
+            Comprehensive playbooks and proven frameworks for breaking into tech sales, 
+            mastering cold outreach, and building a successful SaaS sales career.
           </p>
 
+          {/* Premium divider */}
+          <div className="animate-fade-up delay-300 bold-divider-brass mt-10" />
+
           {/* CTAs */}
-          <div className="animate-fade-up delay-3 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button variant="electric" size="xl" asChild className="group">
-              <Link href="/offerings" className="gap-2">
-                Browse Offerings
+          <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-4 mt-10">
+            <Button variant="brass" size="xl" asChild className="group">
+              <Link href="/playbooks" className="gap-3">
+                Explore Playbooks
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button variant="outline" size="xl" asChild className="border-white/30 bg-white/5 text-white hover:bg-white/15 hover:text-white">
-              <Link href="/blog" className="gap-2">
+            <Button variant="outline" size="xl" asChild className="group border-midnight/20 hover:border-midnight hover:bg-midnight hover:text-white">
+              <Link href="/blog" className="gap-3">
                 <BookOpen className="h-5 w-5" />
                 Free Guides
               </Link>
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="animate-fade-up delay-4 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-slate">
-            <div className="flex items-center gap-2">
-              <div className="h-2 w-2 rounded-full bg-neon" />
-              <span>Instant PDF Download</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="h-2 w-2 rounded-full bg-neon" />
-              <span>Lifetime Updates</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="h-2 w-2 rounded-full bg-neon" />
-              <span>Real Scripts & Templates</span>
+          {/* Trust indicators */}
+          <div className="animate-fade-up delay-500 mt-16 pt-10 border-t border-midnight/10">
+            <div className="flex flex-wrap gap-x-10 gap-y-4 text-sm text-stone">
+              <div className="flex items-center gap-3">
+                <div className="w-1.5 h-1.5 bg-brass rounded-full" />
+                <span>Instant PDF Download</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1.5 h-1.5 bg-brass rounded-full" />
+                <span>Lifetime Updates</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1.5 h-1.5 bg-brass rounded-full" />
+                <span>Real Scripts & Templates</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1.5 h-1.5 bg-sage rounded-full" />
+                <span>30-Day Money-Back Guarantee</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Decorative side element */}
+      <div className="hidden lg:block absolute right-0 top-1/4 w-px h-48 bg-gradient-to-b from-transparent via-brass/30 to-transparent" />
     </section>
   )
 }
