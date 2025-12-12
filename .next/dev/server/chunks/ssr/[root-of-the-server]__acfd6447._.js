@@ -61,7 +61,7 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-0 right-1/4 w-96 h-96 bg-neon/10 rounded-full blur-3xl animate-float delay-3"
+                className: "absolute bottom-0 right-1/4 w-96 h-96 bg-emerald/10 rounded-full blur-3xl animate-float delay-3"
             }, void 0, false, {
                 fileName: "[project]/Downloads/tech-sales-bible/components/home/hero-section.tsx",
                 lineNumber: 13,
@@ -75,7 +75,7 @@ function HeroSection() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "animate-fade-up flex justify-center mb-8",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-2 rounded-full bg-neon/10 border border-neon/20 px-4 py-2 text-sm text-neon",
+                                className: "inline-flex items-center gap-2 rounded-full bg-gold/10 border border-gold/20 px-4 py-2 text-sm text-gold",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
                                         className: "h-4 w-4"
@@ -108,7 +108,7 @@ function HeroSection() {
                                 "Break Into Tech Sales.",
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "bg-gradient-to-r from-electric to-neon bg-clip-text text-transparent",
+                                    className: "bg-gradient-to-r from-electric to-emerald bg-clip-text text-transparent",
                                     children: "Crush Your Quota."
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/tech-sales-bible/components/home/hero-section.tsx",
@@ -201,7 +201,7 @@ function HeroSection() {
                                     className: "flex items-center gap-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "h-2 w-2 rounded-full bg-neon"
+                                            className: "h-2 w-2 rounded-full bg-gold"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/tech-sales-bible/components/home/hero-section.tsx",
                                             lineNumber: 58,
@@ -224,7 +224,7 @@ function HeroSection() {
                                     className: "flex items-center gap-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "h-2 w-2 rounded-full bg-neon"
+                                            className: "h-2 w-2 rounded-full bg-gold"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/tech-sales-bible/components/home/hero-section.tsx",
                                             lineNumber: 62,
@@ -247,7 +247,7 @@ function HeroSection() {
                                     className: "flex items-center gap-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "h-2 w-2 rounded-full bg-neon"
+                                            className: "h-2 w-2 rounded-full bg-gold"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/tech-sales-bible/components/home/hero-section.tsx",
                                             lineNumber: 66,
@@ -2029,7 +2029,7 @@ function CTASection() {
                             className: "mt-10 inline-flex items-center gap-3 rounded-full bg-white/10 border border-white/20 px-6 py-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
-                                    className: "h-6 w-6 text-white"
+                                    className: "h-6 w-6 text-gold"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/tech-sales-bible/components/home/cta-section.tsx",
                                     lineNumber: 33,

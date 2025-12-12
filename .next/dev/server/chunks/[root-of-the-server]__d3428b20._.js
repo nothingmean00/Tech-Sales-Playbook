@@ -88,13 +88,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$stripe$2f$esm$2f$stripe$2e$esm$2e$node$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/tech-sales-bible/node_modules/stripe/esm/stripe.esm.node.js [app-route] (ecmascript)");
 ;
-if (!process.env.STRIPE_SECRET_KEY) {
-    throw new Error("STRIPE_SECRET_KEY is not set");
-}
-const stripe = new __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$stripe$2f$esm$2f$stripe$2e$esm$2e$node$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"](process.env.STRIPE_SECRET_KEY, {
-    apiVersion: "2024-11-20.acacia",
+const stripe = process.env.STRIPE_SECRET_KEY ? new __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$stripe$2f$esm$2f$stripe$2e$esm$2e$node$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"](process.env.STRIPE_SECRET_KEY, {
+    apiVersion: "2025-11-17.clover",
     typescript: true
-});
+}) : null;
 const STRIPE_PRICES = {
     // Playbooks
     "breaking-into-tech-sales": process.env.STRIPE_PRICE_BREAKING_IN || "",
@@ -133,7 +130,7 @@ const playbooks = [
         description: "Your complete roadmap to landing your first tech sales role—no experience required.",
         longDescription: "The definitive guide for career changers and new grads breaking into tech sales. Covers everything from understanding the SDR landscape to crafting a compelling narrative, acing interviews, and negotiating your first offer. Built from hundreds of successful career transitions.",
         price: 79,
-        icon: "rocket",
+        icon: "briefcase",
         contents: [
             "Tech sales landscape breakdown (SDR, BDR, AE roles explained)",
             "Company targeting strategy (startup vs. enterprise)",
@@ -241,7 +238,7 @@ const playbooks = [
         description: "Negotiation tactics, closing techniques, and the psychology of getting to yes.",
         longDescription: "Everything you need to close more deals at higher values. From early-stage commitment techniques to final negotiation tactics, handling procurement, and the psychological principles that drive buying decisions. Stop leaving money on the table.",
         price: 69,
-        icon: "trophy",
+        icon: "target",
         contents: [
             "The psychology of buying decisions",
             "Trial close techniques throughout the cycle",
@@ -785,6 +782,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2
 ;
 async function POST(request) {
     try {
+        // Check if Stripe is configured
+        if (!__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$lib$2f$stripe$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["stripe"]) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                error: "Payment system not configured. Please add STRIPE_SECRET_KEY to your environment variables.",
+                setup: true
+            }, {
+                status: 503
+            });
+        }
         const body = await request.json();
         const { productSlug, productType } = body;
         // Validate product exists
@@ -796,10 +802,10 @@ async function POST(request) {
                 status: 404
             });
         }
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
         const priceId = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$lib$2f$stripe$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["STRIPE_PRICES"][productSlug];
         if (!priceId) {
             // Fallback: create a price on the fly (for development)
-            // In production, you should have all prices pre-created in Stripe
             const session = await __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$tech$2d$sales$2d$bible$2f$lib$2f$stripe$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["stripe"].checkout.sessions.create({
                 mode: "payment",
                 payment_method_types: [
@@ -818,8 +824,8 @@ async function POST(request) {
                         quantity: 1
                     }
                 ],
-                success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${productType === "playbook" ? "playbooks" : "offerings"}/${productSlug}`,
+                success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+                cancel_url: `${baseUrl}/${productType === "playbook" ? "playbooks" : "offerings"}/${productSlug}`,
                 metadata: {
                     productSlug,
                     productType
@@ -842,8 +848,8 @@ async function POST(request) {
                     quantity: 1
                 }
             ],
-            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-            cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/${productType === "playbook" ? "playbooks" : "offerings"}/${productSlug}`,
+            success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+            cancel_url: `${baseUrl}/${productType === "playbook" ? "playbooks" : "offerings"}/${productSlug}`,
             metadata: {
                 productSlug,
                 productType

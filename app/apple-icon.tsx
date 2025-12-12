@@ -15,24 +15,31 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
+          background: "linear-gradient(135deg, #1a2234 0%, #0f141d 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          borderRadius: 32,
+          borderRadius: 24,
+          border: "2px solid rgba(212, 162, 22, 0.2)",
         }}
       >
         <svg
           viewBox="0 0 32 32"
           fill="none"
-          width="120"
-          height="120"
+          width="100"
+          height="100"
         >
-          <path d="M13 9L23 16L13 23V9Z" fill="white" fillOpacity="0.95" />
-          <path d="M9 25L14 20L19 22.5L24 15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-          <path d="M21 15H24V18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+          <defs>
+            <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#D4A216" />
+              <stop offset="100%" stopColor="#B8860B" />
+            </linearGradient>
+          </defs>
+          {/* Stylized "P" for Playbook - elegant serif style */}
+          <path d="M10 8H18C20.5 8 22.5 10 22.5 12.5C22.5 15 20.5 17 18 17H14V24H10V8Z" fill="url(#brassGrad)" />
+          <path d="M14 11.5H17.5C18.3 11.5 19 12.2 19 13C19 13.8 18.3 14.5 17.5 14.5H14V11.5Z" fill="#1a2234" />
         </svg>
       </div>
     ),
@@ -41,4 +48,3 @@ export default function Icon() {
     }
   )
 }
-

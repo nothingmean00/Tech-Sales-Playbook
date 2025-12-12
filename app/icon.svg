@@ -1,13 +1,19 @@
 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="favGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#1d4ed8" />
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2234" />
+      <stop offset="100%" stop-color="#0f141d" />
+    </linearGradient>
+    <linearGradient id="brassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A216" />
+      <stop offset="100%" stop-color="#B8860B" />
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="url(#favGradient)" />
-  <path d="M13 9L23 16L13 23V9Z" fill="white" fill-opacity="0.95" />
-  <path d="M9 25L14 20L19 22.5L24 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M21 15H24V18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Midnight navy background -->
+  <rect width="32" height="32" rx="4" fill="url(#bgGradient)" />
+  <!-- Subtle gold border -->
+  <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="url(#brassGradient)" stroke-opacity="0.3" stroke-width="0.5" />
+  <!-- Stylized "P" for Playbook - elegant serif style -->
+  <path d="M10 8H18C20.5 8 22.5 10 22.5 12.5C22.5 15 20.5 17 18 17H14V24H10V8Z" fill="url(#brassGradient)" />
+  <path d="M14 11.5H17.5C18.3 11.5 19 12.2 19 13C19 13.8 18.3 14.5 17.5 14.5H14V11.5Z" fill="#1a2234" />
 </svg>
-

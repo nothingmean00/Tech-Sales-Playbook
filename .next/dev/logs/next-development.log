@@ -1,189 +1,36 @@
-[00:00:00.755] Server  LOG      ✓ Ready in 447ms
-[00:00:03.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.466] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.689] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:03.689] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764794449473}
-[00:00:03.712] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:03.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764794449505}
-[00:53:12.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:12.675] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:53:12.675] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797638468}
-[00:54:08.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:09.119] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:54:09.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797694910}
-[00:54:47.984] Server  LOG      ✓ Compiled in 40ms
-[00:55:51.228] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:51.588] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:55:51.588] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797797374}
-[00:56:13.439] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:13.758] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:56:13.758] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797819546}
-[00:56:33.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:34.223] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:56:34.223] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/playbooks/breaking-into-tech-sales","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764797840008}
-[01:47:59.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:59.611] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:47:59.612] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1764800925402}
-[02:35:06.036] Server  LOG      ✓ Compiled in 271ms
-[02:35:06.692] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:35:06.992] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:35:07.355] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:35:07.355] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[02:35:07.355] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764803753148}
-[02:35:08.006] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:35:08.006] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[02:35:08.006] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764803752878}
-[06:31:15.568] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764817921356}
-[06:31:19.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764817925581}
-[06:53:09.787] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/cold-calling color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/cold-calling","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764819235570}
-[06:53:13.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764819239100}
-[06:53:16.664] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764819242455}
-[06:53:32.546] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764819258330}
-[07:56:04.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[07:56:04.997] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[07:56:04.997] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[07:56:04.997] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764823010781}
-[07:56:08.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[07:56:09.055] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[07:56:09.055] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[07:56:09.055] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764823014845}
-[07:57:07.871] Server  LOG      ✓ Compiled in 1ms
-[07:57:25.771] Server  LOG      ✓ Compiled in 1ms
-[07:57:37.938] Server  LOG      ✓ Compiled in 63ms
-[07:57:45.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[07:57:45.450] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[07:57:45.450] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[07:57:45.450] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764823111146}
-[07:58:11.026] Server  LOG      ✓ Compiled in 94ms
-[07:58:45.969] Server  LOG      ✓ Compiled in 67ms
-[08:15:13.895] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824159680}
-[08:15:16.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/closing color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/closing","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824162405}
-[08:15:20.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824166506}
-[08:15:23.025] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/comp-negotiation color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/comp-negotiation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824168805}
-[08:15:27.055] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824172842}
-[08:15:38.375] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824184160}
-[08:15:42.194] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/sdr-to-ae color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/sdr-to-ae","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824187985}
-[08:15:45.767] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/outbound-prospecting color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/outbound-prospecting","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824191549}
-[08:15:49.045] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824194836}
-[08:15:51.429] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824197219}
-[08:15:54.721] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824200510}
-[08:15:56.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824202714}
-[08:16:38.513] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824244305}
-[08:16:48.050] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/cold-calling color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/cold-calling","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824253842}
-[08:16:52.293] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/discovery-calls color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/discovery-calls","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824258086}
-[08:16:58.158] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\[root-of-the-server]__d3428b20._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.174] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.227] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\32e50_next_1f7de459._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.236] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.239] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\require.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.243] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\load-components.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.252] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.254] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.262] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.276] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.278] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.282] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.285] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:16:58.294] Server  ERROR    ⨯ Error: STRIPE_SECRET_KEY is not set
-[08:17:03.360] Browser ERROR   Checkout error: {}
-[08:19:14.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824400404}
-[08:19:31.685] Server  LOG      ✓ Compiled in 42ms
-[08:20:11.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[08:20:11.445] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824457229}
-[08:21:15.824] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824521612}
-[08:21:27.423] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824533214}
-[08:21:35.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824540846}
-[08:22:27.817] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:22:27.817] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:27.879] Server  LOG      ✓ Compiled in 256ms
-[08:22:28.675] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\Downloads_tech-sales-bible_ef1e4170._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:28.676] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:28.685] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:28.692] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:22:28.692] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:29.196] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\Downloads_tech-sales-bible_30a0198d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:29.196] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:29.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:29.647] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:29.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:29.786] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:22:30.269] Server  LOG      ✓ Compiled in 133ms
-[08:22:30.274] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:30.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[08:22:30.921] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824596710}
-[08:22:31.991] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:22:32.004] Server  LOG      ✓ Compiled in 39ms
-[08:22:33.901] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__acfd6447._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:33.969] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:34.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:34.277] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[08:22:34.392] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824600180}
-[08:22:36.901] Server  LOG      ✓ Compiled in 51ms
-[08:22:37.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:37.802] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:22:37.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[08:22:37.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824603592}
-[08:22:44.127] Server  LOG      ✓ Compiled in 54ms
-[08:22:52.928] Server  LOG      ✓ Compiled in 197ms
-[08:22:53.683] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:53.685] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:54.396] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:54.400] Server  LOG      ✓ Compiled in 153ms
-[08:22:54.508] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:54.510] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:55.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:56.057] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:22:56.966] Server  LOG      ✓ Compiled in 134ms
-[08:22:57.080] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:22:57.082] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:22:57.648] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:22:57.850] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:23:13.582] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:23:13.583] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:23:14.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824640668}
-[08:23:15.179] Server  LOG      ✓ Compiled in 240ms
-[08:23:15.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:23:15.197] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:23:17.369] Server  LOG      ✓ Compiled in 126ms
-[08:23:17.477] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:23:17.478] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:23:18.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:23:18.834] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:23:19.615] Server  LOG      ✓ Compiled in 133ms
-[08:23:20.265] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:23:20.268] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:23:21.057] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824646843}
-[08:23:21.467] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:23:21.485] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:23:29.308] Server  LOG      ✓ Compiled in 136ms
-[08:23:29.412] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:23:29.413] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:23:30.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:23:30.362] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:23:31.734] Server  LOG      ✓ Compiled in 135ms
-[08:23:31.843] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:23:31.844] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:23:32.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:23:32.741] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:24:08.222] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824694011}
-[08:24:16.428] Server  ERROR   C:\Users\malik\Downloads\tech-sales-bible\.next\dev\server\chunks\ssr\[root-of-the-server]__a51fdbe8._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[08:24:16.429] Server  ERROR    ⨯ ReferenceError: Zap is not defined
-[08:24:16.574] Browser ERROR   uncaughtError: ReferenceError: Zap is not defined
-[08:24:44.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:24:44.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[08:24:45.108] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824730888}
-[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/playbooks/breaking-into-tech-sales","route":"/playbooks/[slug]"}
-[08:24:45.142] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824730919}
-[08:24:55.923] Server  LOG      ✓ Compiled in 40ms
-[08:24:56.946] Server  LOG      ✓ Compiled in 36ms
-[08:25:05.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824751650}
-[08:25:08.602] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764824754392}
+[00:00:01.956] Server  LOG      ✓ Ready in 1300ms
+[00:00:15.417] Server  LOG      ○ Compiling / ...
+[00:00:21.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.899] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:21.899] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:21.899] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765152126539}
+[00:26:49.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:50.159] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:50.159] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:26:50.159] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765153714794}
+[00:26:53.278] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765153717925}
+[02:16:31.895] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/comp-negotiation color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/comp-negotiation","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160296544}
+[02:16:35.059] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160299697}
+[02:16:44.509] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160309160}
+[02:16:47.382] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160312033}
+[02:16:54.597] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/jobs color: rgb(120, 120, 120) color: inherit {"dp":"/jobs","o":"http://localhost:3000/jobs","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160319242}
+[02:16:55.118] Server  WARN    TheirStack API key not configured
+[02:16:55.151] Server  WARN    TheirStack API key not configured
+[02:16:57.396] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/breaking-into-tech-sales color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/breaking-into-tech-sales","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160322046}
+[02:16:59.599] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160324247}
+[02:17:06.760] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/outbound-prospecting color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/outbound-prospecting","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160331406}
+[02:17:15.880] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160340522}
+[02:17:25.126] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/linkedin-outreach-templates color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/linkedin-outreach-templates","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160349773}
+[02:17:29.694] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765160354346}
+[04:56:59.488] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169924125}
+[04:57:01.187] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169925830}
+[04:57:04.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169929223}
+[04:57:07.222] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/offerings color: rgb(120, 120, 120) color: inherit {"dp":"/offerings","o":"http://localhost:3000/offerings","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169931864}
+[04:57:08.372] Server  WARN    TheirStack API key not configured
+[04:57:08.393] Server  WARN    TheirStack API key not configured
+[04:57:08.466] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/jobs color: rgb(120, 120, 120) color: inherit {"dp":"/jobs","o":"http://localhost:3000/jobs","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169933112}
+[04:57:10.029] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks","o":"http://localhost:3000/playbooks","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169934680}
+[04:57:13.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/cold-calling color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/cold-calling","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169937828}
+[04:57:16.514] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169941159}
+[04:57:23.848] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/playbooks/outbound-prospecting color: rgb(120, 120, 120) color: inherit {"dp":"/playbooks/[slug]","o":"http://localhost:3000/playbooks/outbound-prospecting","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169948494}
+[04:57:28.172] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765169952824}

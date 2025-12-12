@@ -18,7 +18,6 @@ export function HeroSection() {
           <div className="animate-fade-up mb-8">
             <span className="trust-badge">
               <Shield className="h-3.5 w-3.5" />
-              Premium Sales Training
             </span>
           </div>
 
